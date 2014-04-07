@@ -1,0 +1,338 @@
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Writing Mobile Cross Platform Apps with PhoneGap Build</title>
+    
+    <meta name="description" content="Writing Mobile Cross Platform Apps with PhoneGap Build" />
+    <meta name="author" content="Tomer Talgam" />
+
+    <link rel="stylesheet" href="css/presentation.css"></link>
+</head>
+<!-- Inspired At Questions Frame -->
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+        <div id="title" class="step heb" data-x="-1000" data-y="-1500">
+            כתיבת אפליקציות ל iOS, Android, ו-Windows Phone בו זמנית בעזרת <strong>PhoneGap</strong>
+        </div>
+		
+		<div id="about" class="step heb" data-x="-0" data-y="-1500" data-rotate="90" data-scale="5">
+            נושאי היום
+			<div>
+			<div class="medium">PhoneGap</div>
+			<div class="medium">PhoneGap Build</div>
+            <div class="medium">פיתוח לסביבת מובייל</div>
+			<div class="medium">Application Writing </div>
+			<div class="small">ועוד נזכיר נושאים רבים כגון</div>
+			<div class="small">HTML5 + CSS3 + Jquery, Node.js, Sockets.io, jQuery Mobile, Handlebars.js</div>
+			</div>
+        </div>
+
+        <div id="background" class="step heb" data-x="2000" data-y="0" data-rotate="90">
+	       רגע לפני שמתחילים קצת רקע
+        </div>
+
+        <div id="background1" class="step" data-x="4400" data-y="0">
+            <div style="text-align: center">HTML 5</div>
+            
+            <ul id="toc-list">
+                <li><img src="img/HTML5_Offline_Storage_32.png"><a data-hash="offline-storage-title">Offline / Storage</a></li>
+                <li><img src="img/HTML5_Connectivity_32.png"><a data-hash="realtime-title">Realtime / Communication</a></li>
+                <li><img src="img/HTML5_Device_Access_32.png"><a data-hash="hardware-access-title">File / Hardware Access</a></li>
+                <li><img src="img/HTML5_Semantics_32.png"><a data-hash="semantics-markup-title">Semantics &amp; Markup</a></li>
+                <li><img src="img/HTML5_3D_Effects_32.png"><a data-hash="graphics-multimedia-title">Graphics / Multimedia</a></li>
+                <li><img src="img/HTML5_Performance_32.png"><a data-hash="nuts-bolts-title">Nuts &amp; Bolts</a></li>
+            </ul>
+
+        </div>
+
+        <div id="border-radius"  class="step" data-x="6500" data-y="0" >
+            <div style="text-align: center">CSS 3</div>
+            <div class="content">
+                <div class="doraemon">
+                    <div class="face">
+                        <div class="base-white"></div>
+                        <div class="lefteye eye eye-left">
+                            <div class="leftblackeye black-eye black-left"></div>
+                        </div>
+                        <div class="righteye eye eye-right">
+                            <div class="rightblackeye black-eye black-right"></div>
+                        </div>
+                        <div class="nose">
+                            <div class="nose-line"></div>
+                        </div>
+                        <div class="mouth"></div>
+                        <div class="whiskers whi-right whi-top"></div>
+                        <div class="whiskers whi-right whi-mid"></div>
+                        <div class="whiskers whi-right whi-bottom"></div>
+                        <div class="whiskers whi-left whi-top"></div>
+                        <div class="whiskers whi-left whi-mid"></div>
+                        <div class="whiskers whi-left whi-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="phonegapis" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            PhoneGap...
+        </div>
+
+        <div id="phonegapis1" class="step" data-x="5500" data-y="-850" data-rotate="270" data-scale="6">
+            "PhoneGap, [is] a cross-platform framework for device-neutral mobile development"
+        </div>
+
+        <div id="phonegapis2" class="step heb" data-x="8000" data-y="-850" data-rotate="270" data-scale="6">
+			מעטפת המאפשרת לקרוא לפונקציות פנימיות של המכשיר בעזרת Javascript
+        </div>
+
+        <div id="phonegapis3" class="step heb" data-x="10000" data-y="-850" data-rotate="270" data-scale="6">
+			מאפשר לכם לכתוב אפלקציות "Native" לשלל פלטפורמות בו זמנית בעזרת CSS, HTML ו-JS בלבד
+        </div>
+
+        <div id="phonegapis4" class="step heb" data-x="13000" data-y="-850" data-rotate="270" data-scale="6">
+			קוד פתוח המתוחזק באופן שוטף בעל קהילת מפתחים עצומה של (400,000+) 
+        </div>
+
+        <div id="history" class="step heb" data-x="3000" data-y="-1000" data-rotate="530" data-scale="3">
+            היסטוריה חשובה:
+        </div>
+
+        <div id="history1" class="step heb" data-x="3000" data-y="-2000" data-rotate="530" data-scale="3">
+			נוצר ע"י Nitobi בכנס "iPhoneDevCamp" בשנת 2009
+            
+        </div>        
+
+        <div id="history2" class="step heb" data-x="3000" data-y="-3000" data-rotate="530" data-scale="3">
+            נקנה ע"י Adobe בשנת 2011
+        </div>
+
+        <div id="history3" class="step heb" data-x="3000" data-y="-4000" data-rotate="530" data-scale="3">
+            <div>Adobe תרמה את הקוד ל- "Apache Foundation".</div>
+
+            <div class="medium">Apache שינו את השם של הגרסה שלהם ל- “Apache Callback” ואז לאחר מכן לשמו הנוכחי “Cordova“</div>
+        </div>
+
+        <div id="history4" class="step heb" data-x="3000" data-y="-5000" data-rotate="530" data-scale="3">
+            כמעט ואין הבדל בין הגרסאות למעט שירותים נוספים שמספקת Adobe החשוב מביניהם הוא שירות ה-Build
+        </div>
+
+        <div id="how" class="step heb" data-x="-2000" data-y="0" data-rotate="700" data-scale="9">
+            איך PhoneGap פועל:
+        </div>
+
+        <div id="how1" class="step heb" data-x="-2700" data-y="3200" data-rotate="740" data-scale="7">
+			האפליקציה הנוצרת היא למעשה עמוד אינטרנט על דף מלא ( full-screen web view )
+        </div>
+
+        <div id="how2" class="step heb" data-x="-4800" data-y="4900" data-rotate="780" data-scale="5">
+			למעשה אתם בוחרים איזה דף HTML להציג כדף הפתיחה.
+        </div>
+
+        <div id="how3" class="step heb" data-x="-6900" data-y="4600" data-rotate="820" data-scale="3">
+			מנוקדה זו ואילך למעשה ניתן להחשיב את האפליקציה כאפליקציית WEB רגילה לכל דבר ב- HTML/CSS/JS
+        </div>
+
+        <div id="how4" class="step heb" data-x="-7500" data-y="3400" data-rotate="860" data-scale="1">
+            כעת תצוגת ה- WEB מאזינה ומגיבה לקריאות Javascript בדיוק כמו בדפדפן
+        </div>
+
+        <div id="when" class="step heb" data-x="100" data-y="0">
+			מתי כדאי להשתמש ב-PhoneGap?
+        </div>
+
+        <div id="when1" class="step heb" data-x="-500" data-y="0" data-rotate="90" data-scale="1">
+            <div>
+			כשאתם רוצים לכתוב את אותה אפליקציה לכמה מכשירים, ואינכם רוצים לתחזק 3 או 4 גרסאות קוד שונות*.
+			</div> 
+            <div class="small">* חוץ מ-plugins</div>
+        </div>
+
+        <div id="when2" class="step heb" data-x="-500" data-y="500" data-rotate="180" data-scale="1">
+			כשנוח לכם יותר עם HTML/CSS/JS מאשר עם Objective-C או Java
+        </div>
+
+        <div id="when3" class="step heb" data-x="-1000" data-y="500" data-rotate="270" data-scale="1">
+			כשאתם רוצים שהאפליקציה שלכם תהיה נגישה מהאינטרנט או ממכשירים שונים
+        </div>
+
+        <div id="whennot" class="step heb" data-x="8000" data-y="6000" data-rotate="180" data-scale="9">
+            <div>מתי <em>לא</em> כדאי להשתמש ב-PhoneGap?</div>
+            <img src="img/no-thanks.gif" />
+        </div>
+
+        <div id="whennot1" class="step heb" data-x="4000" data-y="6000" data-rotate="90" data-scale="9">
+            <div>כאשר האפליקציה עתירת ביצועיים או חייבת ביצועיים ברמת ה-"Native"</div>
+        </div>
+
+        <div id="whennot2" class="step heb" data-x="9000" data-y="4000" data-rotate="0" data-scale="9">
+            <div>אם לא נוח לכם עם HTML/CSS/JS</div>
+        </div>
+
+        <div id="whennot3" class="step heb" data-x="13000" data-y="7000" data-rotate="-90" data-scale="9">
+            <div>אם אתם מתעניינים רק בסוג מסויים של מכשיר (אולי)</div>
+            <img src="img/one.gif" />
+        </div>
+
+        <div id="do" class="step heb" data-x="0" data-y="1000" data-rotate="0" data-scale="1">
+			אז מה אתם יכולים לעשות עם PhoneGap בעזרת Javascript בלבד?
+        </div>
+
+        <div id="do1" class="step" data-x="-15000" data-y="2000" data-rotate="0" data-scale="10" data-rotate-y="-20">
+            Use/track the accelerometer
+        </div>
+
+        <div id="do2" class="step" data-x="-15000" data-y="3000" data-rotate="0" data-scale="10" data-rotate-y="-40">
+            Take pictures with the camera or pick from their photo gallery
+        </div>
+
+        <div id="do3" class="step" data-x="-15000" data-y="4000" data-rotate="0" data-scale="10" data-rotate-y="-60">
+            Capture audio, images, or video
+        </div>
+
+        <div id="do4" class="step" data-x="-15000" data-y="5000" data-rotate="0" data-scale="10" data-rotate-y="-80">
+            Get compass data
+        </div>
+
+        <div id="do5" class="step" data-x="-15000" data-y="6000" data-rotate="0" data-scale="10" data-rotate-y="-100">
+            Get notifications about connectivity (online, offline, wifi vs 3G, etc)
+        </div>
+
+        <div id="do6" class="step" data-x="-15000" data-y="7000" data-rotate="0" data-scale="10" data-rotate-y="-120">
+            Have access to contacts read and write
+        </div>
+
+        <div id="do7" class="step" data-x="-15000" data-y="8500" data-rotate="0" data-scale="10" data-rotate-y="-140">
+            Get information about the device that is running your app (UUID, version, model, etc)
+        </div>
+
+        <div id="do8" class="step" data-x="-15000" data-y="10500" data-rotate="0" data-scale="10" data-rotate-y="-160">
+            Receive events about when your app is started, resumed, closed, etc
+        </div>
+
+        <div id="do9" class="step" data-x="-15000" data-y="12500" data-rotate="0" data-scale="10" data-rotate-y="-180">
+            Receive events about incoming calls, messages, battery events, volume changes, etc
+        </div>
+
+        <div id="do10" class="step" data-x="-15000" data-y="14000" data-rotate="0" data-scale="10" data-rotate-y="-200">
+            Read from the file system
+        </div>
+
+        <div id="do11" class="step" data-x="-15000" data-y="15000" data-rotate="0" data-scale="10" data-rotate-y="-220">
+            Get geolocation information
+        </div>
+
+        <div id="do12" class="step" data-x="-15000" data-y="16000" data-rotate="0" data-scale="10" data-rotate-y="-240">
+            Work with globalization
+        </div>
+
+        <div id="do13" class="step" data-x="-15000" data-y="17200" data-rotate="0" data-scale="10" data-rotate-y="-260">
+            Send notifications (sounds, vibrations, alerts, etc)
+        </div>
+
+        <div id="do14" class="step" data-x="-15000" data-y="19000" data-rotate="0" data-scale="10" data-rotate-y="-280">
+            Read/write to WebSQL (or SQLite) databases
+        </div>
+
+        <div id="do15" class="step heb" data-x="-15000" data-y="20700" data-rotate="0" data-scale="10" data-rotate-y="-300">
+            וכל דבר אחר העולה ברוחכם PhoneGap מאפשרת לכתוב Plugins יחסית בקלות
+        </div>
+
+        <div id="keep" class="step heb" data-x="-15000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+             דברים שכדאי לזכור כשמפתחים ב-PhoneGap ולמובייל בכלל
+        </div>
+
+        <div id="keep1" class="step heb" data-x="-10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+			כל הכתובות URLs למשאבים (css, js, fonts, images, etc) צריכות להיות רלטיביות.
+        </div>
+
+        <div id="keep2" class="step heb" data-x="-5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            כתובת אבסולוטית מתחילה מהתיקייה הבסיסית ביותר במערכת הקבצים (בדומה למערכות לינוקס)  כלומר הכתובת foo/bar.jpg מצביעה ל- file://foo/bar.jpg ולא לקבצי האפליקציה
+        </div>
+
+        <div id="keep3" class="step heb" data-x="0" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            <div>הסימולטור הוא רק סימולטור. בידקו הכל על המכשיר המיועד כמה שיותר מוקדם וכמה שיותר פעמים.</div>
+            <img src="img/miscommunication.gif" />
+        </div>
+
+        <div id="keep4" class="step heb" data-x="5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            <div>Debugging לרוב קשה הרבה יותר מדפדפן רגיל . וייתכן וישנן גרסאות רבות של מכשירים ודפדפנים שצריך להתאים אליהן</div>
+        </div>
+
+        <div id="keep5" class="step heb" data-x="10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="0" data-rotate-y="-300">
+            <div>אם אתם רוצים לפתח ל-iPhone אתם עדיין זקוקים ל-Mac*</div>
+            <div class="small">* כאן נכנס השירות הגאוני של PhoneGap Build</div>
+        </div>
+
+        <div id="keep6" class="step heb" data-x="10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+			עדיין יש הבדלים קטנים בין הדפדפנים במכשירים השונים שמשפיעים על העיצוב ועל הקוד שתכתבו
+        </div>
+
+        <div id="keep7" class="step heb" data-x="5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            כרגיל Microsoft עושים מה שבא להם מבחינת דפדפן ו-Windows Phone לא שונה. הוא בעל תמיכה משונה ומוגבלת ב- (HTML5 ו- CSS3)
+        </div>
+
+        <div id="keep8" class="step heb" data-x="0" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+			אנימציות יכולות להיות מקוטעות אם לא תעשו אותן דרך המאיץ הגרפי GPU. ככלל אצבע אנימציות של JQuery לא עוברות דרך ה-GPU ואנימציות של CSS3 כן.
+        </div>
+
+        <div id="keep9" class="step heb" data-x="-5000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            <div>רק בגלל שנתקלתם בדבר מה שאינו עובד חלק ישר מהקופסא אין זה אומר שאתם צריכים להרים ידיים.</div>
+
+            <div>ככלל, עם קצת אופטימיזציות, תוכלו לגרום לאפליקציה להראות ולהתנהג בדיוק כמו שאתם רוצים ממש כמו אפליקציית "Native"</div>
+        </div>
+
+        <div id="keep10" class="step heb" data-x="-10000" data-y="-3000" data-rotate="0" data-scale="1" data-rotate-y="180" data-rotate-y="-300">
+            <div>הרכיבים שניתן לעבוד מולם הם <em>ברובם</em> זהים במכשירים השונים</div>
+            <img src="img/features.png" />
+        </div>
+
+        <div id="start" class="step heb" data-x="0" data-y="0" data-rotate-y="90" data-scale="1">
+            להתחיל זה קל
+        </div>
+
+        <div id="start1" class="step heb" data-x="0" data-y="300" data-rotate-y="90" data-scale="1">
+            http://docs.phonegap.com מכיל את כל המידע הדרוש
+        </div>
+
+        <div id="start2" class="step heb" data-x="0" data-y="600" data-rotate-y="90" data-scale="1">
+			וכעת נותר לנו ללכת להוריד את ה-SDKs שאנו רוצים לעבוד איתם (Android, iOS, Windows Phone, etc)
+        </div>
+
+        <div id="start3" class="step heb" data-x="0" data-y="900" data-rotate-y="90" data-scale="1">
+            אבל אנחנו לא נעשה את כל זה אנחנו נעבוד עם PhoneGap Build
+        </div>
+
+        <div id="code" class="step heb" data-x="0" data-y="1200" data-rotate-y="180" data-scale="1">
+            <div class="grow">
+                אז יאללה בואו נכתוב קצת קוד ?
+            </div>
+            <img src="img/code.gif" />
+        </div>
+
+        <div id="questions" class="step">
+            <h1 class="heb" style="text-align: center;"><strong>שאלות?</strong></h1>
+
+            <div class="medium">https://www.linkedin.com/in/ttalgam</div>
+            <div class="medium">&#116;&#116;&#97;&#108;&#103;&#97;&#109;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</div>
+			<div class="small"> 
+			Also Check Out
+			<a href="http://scottcheng.github.io/revolutionary-css3/#/title">Scott Cheng</a>
+			CSS3 Slides and 
+			<a href="slides.html5rocks.com">html5rocks</a>
+			For The HTML5 Slides and 
+			<a href="https://github.com/bryanhales/phonegap-presentation">Bryan Hales</a>
+			Phonegap Presentation
+        </div>
+
+    </div>
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+</html>
